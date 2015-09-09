@@ -21,9 +21,9 @@ class Screen(object):
 	@height.setter
 	def height(self, value):
 		if not isinstance(value, int):
-			raise ValueError('width must be an integer.')
+			raise ValueError('height must be an integer.')
 		if value <= 0:
-			raise ValueError('width must be larger than 0')
+			raise ValueError('height must be larger than 0')
 		self._height = value
 		
 	@property
